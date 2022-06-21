@@ -123,7 +123,7 @@ section .title::after{
     color: purple;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: purple;
 }
 
 /* menu btn styling */
@@ -261,6 +261,7 @@ section .title::after{
 .services, .teams{
     color:#fff;
     background: #111;
+    
 }
 .services .title::before,
 .teams .title::before{
@@ -269,10 +270,12 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
+    background-repeat: repeat;
     content: "o que ofereço";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
+    margin: 0 auto;
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -280,6 +283,42 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.services .serv-content .card .dropbtn {
+    background-color: #222;
+    color: white;
+    padding: 0.01px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+.services .serv-content .card .dropdown {
+    position: relative;
+    display: inline-block;
+}
+.services .serv-content .card .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .services .serv-content .card  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .services .serv-content .card  .dropdown-content a:hover {background-color: #111}
+  
+  .services .serv-content .card  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .services .serv-content .card .dropdown:hover .dropbtn {
+    background-color: purple;
+  }
 .services .serv-content .card:hover{
     background: purple;
 }
@@ -363,19 +402,19 @@ section .title::after{
     background: purple;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 100%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 75%;
 }
 .skills-content .right .js::before{
-    width: 40%;
-}
-.skills-content .right .php::before{
     width: 50%;
 }
+.skills-content .right .php::before{
+    width: 25%;
+}
 .skills-content .right .mysql::before{
-    width: 30%;
+    width: 25%;
 }
 
 /* contact section styling */
@@ -399,6 +438,7 @@ section .title::after{
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
+    
 }
 .contact .contact-content .row{
     display: flex;
@@ -417,65 +457,6 @@ section .title::after{
 }
 .contact .contact-content .info .sub-title{
     color: rgb(117, 107, 107);
-}
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-  padding-top: 10px;
-  resize: none;
-}
-.contact .right form .button-area{
-  display: flex;
-  align-items: center;
-}
-.right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: purple;
-  border: 2px solid purple;
-  transition: all 0.3s ease;
-}
-.right form .button-area button:hover{
-  color: purple;
-  background: none;
 }
 /* footer section styling */
 footer{
