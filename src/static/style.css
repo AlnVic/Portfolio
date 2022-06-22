@@ -271,7 +271,7 @@ section .title::after{
 .teams .title::after{
     background: #111;
     background-repeat: repeat;
-    content: "o que ofereço";
+    content: "o que já fiz";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -599,4 +599,8 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+.services .serv-content .card a{
+    text-decoration: none;
+    color: #fff;
 }
